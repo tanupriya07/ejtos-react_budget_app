@@ -98,8 +98,11 @@ export const AppReducer = (state, action) => {
             if(cur_budget < total_expence){
                 //console.log(cur_budget);
                 //state.budget=prev_budget;
-                alert("You cannot reduce the budget value lower spending amount");
+                alert("You cannot reduce the budget value lower than spending amount");
             }
+            // else if(cur_budget>20000){
+            //     alert("Budget cannot exceed 20000");
+            // }
             else{
                 //console.log("Current Budget");
                 state.budget=cur_budget;
